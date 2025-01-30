@@ -1,0 +1,58 @@
+﻿<Window x:Class="GeoCoordinates.MainWindow"
+        xmlns:gmaps="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoCoordinates"
+        mc:Ignorable="d"
+        Title="GeoCoordinates" Height="554" Width="600"
+        Icon="/icon.png">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <!-- Добавляем курсор -->
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Получение координат по адресу" Grid.Row="0"
+               FontWeight="Bold" HorizontalAlignment="Center"  FontSize="18"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,10,0,0">
+            <Label Content="Введите адрес:" />
+            <TextBox x:Name="tbAdress" VerticalContentAlignment="Center" Padding="5,0"
+                    Text="Адрес..." TextWrapping="Wrap"
+                    Width="450" />
+        </StackPanel>
+
+        <Button Name="btGetCoord" Content="Получить координаты" Grid.Row="2" Margin="0,10,0,0" Width="180" Click="btGetCoord_Click"/>
+        <Label Name="lbGeoCoord" Content="" Grid.Row="3" HorizontalAlignment="Center"
+               HorizontalContentAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
+        <gmaps:GMapControl x:Name="gMap" Grid.Row="4" Margin="0,10,0,0"/>
+    </Grid>
+</Window>
