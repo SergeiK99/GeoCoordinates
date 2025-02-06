@@ -37,3 +37,5 @@ C:\Users\skx20\source\repos\GeoCoordinates\GeoCoordinates\bin\Debug\net8.0-windo
 C:\Users\skx20\source\repos\GeoCoordinates\GeoCoordinates\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
 C:\Users\skx20\source\repos\GeoCoordinates\GeoCoordinates\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\skx20\source\repos\GeoCoordinates\GeoCoordinates\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\skx20\source\repos\GeoCoordinates\GeoCoordinates\obj\Debug\net8.0-windows\GeoCoordinates.sourcelink.json
+C:\Users\skx20\source\repos\GeoCoordinates\GeoCoordinates\obj\Debug\net8.0-windows\GeoCoordinates_Content.g.cs

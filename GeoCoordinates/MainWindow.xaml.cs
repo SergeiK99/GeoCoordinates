@@ -43,7 +43,7 @@ namespace GeoCoordinates
                 // Запускаем асинхронную операцию получения координат
                 var coordinates = await GeoCoder.GetCoordinatesAsync(address);
 
-                // Выводим результат в текстовый блок
+                // Выводим результат в текстовый блок и на карту
                 if (coordinates != null)
                 {
                     lbGeoCoord.Content = coordinates.ToString();
@@ -53,7 +53,7 @@ namespace GeoCoordinates
                 }
                 else
                 {
-                    lbGeoCoord.Content = "Не удалось получить координаты. Проверьте адрес или API ключ.";
+                    lbGeoCoord.Content = "Не удалось получить координаты. Проверьте адрес.";
                 }
             }
             catch (Exception ex)

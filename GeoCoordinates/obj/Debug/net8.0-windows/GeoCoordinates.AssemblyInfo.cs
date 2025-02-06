@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeoCoordinates")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cda2dc8d66c13201393364047b7cb34ec30ac88f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeoCoordinates")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeoCoordinates")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,8 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GeoCoordinates"
         mc:Ignorable="d"
-        Title="GeoCoordinates" Height="554" Width="600"
-        Icon="/icon.png">
+        Title="GeoCoordinates" Height="555" Width="620">
     <Window.Resources>
         <Style TargetType="Label">
             <Setter Property="FontFamily" Value="Arial"/>
@@ -47,7 +46,7 @@
             <Label Content="Введите адрес:" />
             <TextBox x:Name="tbAdress" VerticalContentAlignment="Center" Padding="5,0"
                     Text="Адрес..." TextWrapping="Wrap"
-                    Width="450" />
+                    Width="454" />
         </StackPanel>
 
         <Button Name="btGetCoord" Content="Получить координаты" Grid.Row="2" Margin="0,10,0,0" Width="180" Click="btGetCoord_Click"/>
